@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Woof&mdash;Meow</title>
+<link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+<link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/prettify.css">
+</head>
+<body>
+<div class="wrapper">
+<nav>
+ 
+    <div style="width:80px;margin:0 auto;">
+        <h1><a href=""><img src="img/logo.png" alt="" /></a></h1>
+      </div>
+</nav>
+<header>
+  <div class="container">
+  </br>
+    <h2 class="lone-header">Woof-Meow Документација</h2>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav">
+      <li style="padding-bottom: 5px;"><strong><i>Навигација на документација:</i></strong></li>
+      <li><a href="#welcome" class="cc-active active">Вовед</a></li>
+      <li><a href="#configuration" class="cc-active">Конфигурација за Android</a></li>
+      <li><a href="#build" class="cc-active">Изградба и пуштање</a></li>
+      <li><a href="#support" class="cc-active">Поддршка</a></li>
+    </ul>
+    <div class="docs-content">
+      <h2 id="welcome"> Woof-Meow - Платформа за грижа за миленици Flutter апликација</h2>
+      <p style="margin-bottom: 0px;"><b>Последно ажурирано</b> : 30-03-2023</p>
+      <p style="margin-top: 0px;"><b>Од</b> : <a style="text-decoration: underline;" href="https://github.com/Bojan1V/Mobilni-informaciski-sistemi"><i>193192</i> & <i>193101</i></a></p>
+      <p>
+        Woof-Meow е целосен шаблон за апликација за Платформа за грижа за миленици во Flutter. Онлајн заедница за стручњаци по грижа за домашни миленици. Онлајн платформата им овозможува на владетелите на миленици да најдат чувар за нивната куќа и миленици додека не се вратат дома. Чуварите ќе се грижат за домот и милениците бесплатно во замена за сместување. Ако сте заинтересирани да развиете своја апликација за Пет Ситинг Сервис, Android и iOS апликацијата Woof-Meow е идеална за вас. Тоа е комплетен UI KIT за апликации развиен со помош на Flutter. Содржи 35+ сјајни екрани со различни видови на UI. За сите програмери тоа е многу полесно. Секој може да ја стартува апликацијата со следење на упатствата за проектот.
+
+        <p>За да ја прилагодите оваа апликација, треба да имате инсталирано и конфигурирано Flutter и Dart на вашиот уред. <a href="https://flutter.dev/docs/get-started/install" style="color: red; text-decoration: underline;">Инсталирајте го Flutter</a> Инсталирајте ги додатоците за Flutter и Dart. за вашата редактора <a href="https://flutter.dev/docs/get-started/editor?tab=androidstudio" style="color: red; text-decoration: underline;">(Android Studio / Visual Code / IntelliJ)</a></p>
+        <ul>
+           <li>Екстрактирајте ја папката со датотеки и отворете ја. Името на изворниот код е Woof-Meow-source-code, стартувајте преку вашиот предпочитан IDE <span style="color: red;">(Android Studio / Visual Code / IntelliJ)</span> за да го отворите проектот.</li>
+        </ul>
+        <h3 id="configuration">За Android конфигурација</h3>
+        <p><strong>Добијте ги зависностите:</strong></p>
+        <ol>
+          <li>Извршете ја следната команда:</li>
+          <pre class="prettyprint" style="white-space: normal;">
+            flutter pub get
+          </pre>
+        </ol>
+        <p><strong>Промена на името на пакетот:</strong></p>
+        <ol>
+            <li>Ако сакате да го смените името на пакетот следете ги следните чекори:</li>
+            <li>Отворете <strong>/android/app/build.gradle</strong> и сменете го името на пакетот</li>
+            <pre class="prettyprint" style="white-space: normal;">
+              <ul style="list-style-type: none; padding: 0;">
+                <li>defaultConfig {</li>
+                <li><span>applicationId "<REPLACE WITH YOUR PACKAGE NAME>" // ова е името на пакетот</span></li>
+                <li><span>minSdkVersion 25</span></li>
+                <li><span>targetSdkVersion 33</span></li>
+                <li><span>versionCode flutterVersionCode.toInteger()</span></li>
+                <li><span>versionName flutterVersionName</span></li>
+                <li><span>testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"</span></li>
+                <li><span>multiDexEnabled true</span></li>
+                <li>}</li>
+              </ul>
+            </pre>
+            <li>Отворете <strong>/android/app/src/main/AndroidManifest.xml</strong> , <strong>/android/app/src/profil/AndroidManifest.xml</strong>, <strong>/android/app/src/debug/AndroidManifest.xml</strong> и специфицирајте ги вашите:</li>
+            <li>Отворете <strong>/android/app/src/main/kotlin/MainActivity.kt</strong> и сменете го името на пакетот</li>
+          </ol>
+          <h3 id="build">Градење и стартување:</h3>
+        <p><strong>Стартување на апликацијата:</strong></p>
+        <ol>
+          <li>Стартувајте го <b>main.dart</b> без дебагирање(run without debugging опцијата) и почекајте да се подигне апликацијата преку вашиот поставен емулатор. <br>
+            или  кликнете на иконата за старт на апликацијата во тулбарот. <br>
+            За детали, посетете го линкот: <a href="https://developer.android.com/studio/run/managing-avds" style="color: red; text-decoration: underline;">Управување со AVD</a></li>
+          <li>Ако не користите Android Studio или IntelliJ, можете да го користите командниот ред за стартување на апликацијата со следната команда:</li>
+        </ol>
+        <pre class="prettyprint" style="white-space: normal;">
+          flutter run
+        </pre>
+        <img style="width: 100%;" src="img/run_app.png" alt="run">
+    <h3 id="support">Поддршка</h3>
+    <p>Задоволство ни е да ви помогнеме во случај да имате некакви прашања поврзани со оваа апликација.Контактирајте не!</p>
+        <p>Е-маил контакт: <b>anton.nedelkoski@students.finki.ukim.mk / bojan.vrskovski@students.finki.ukim.mk</b></p>
+      </div>
+    </div>
+</section>
+</div>
+
+<script src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/prettify/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="js/layout.js"></script>
+</body>
+</html>

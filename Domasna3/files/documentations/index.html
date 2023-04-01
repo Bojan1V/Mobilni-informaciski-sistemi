@@ -1,0 +1,108 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>Woof&mdash;Meow</title>
+<link rel="shortcut icon" href="./img/fav.png" type="image/x-icon">
+<link rel="alternate" type="application/rss+xml" title="frittt.com" href="feed/index.html">
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/prettify.css">
+</head>
+<body>
+<div class="wrapper">
+<nav>
+ 
+  <div style="width:80px;margin:0 auto;">
+    <h1><a href=""><img src="img/logo.png" alt="" /></a></h1>
+  </div>
+    
+
+</nav>
+<header>
+  <div class="container">
+  </br>
+    <h2 class="lone-header">Woof-Meow Documentation</h2>
+  </div>
+</header>
+<section>
+  <div class="container">
+    <ul class="docs-nav">
+      <li style="padding-bottom: 5px;"><strong><i>Documentation Navigation:</i></strong></li>
+      <li><a href="#welcome" class="cc-active active">Indroduction</a></li>
+      <li><a href="#requirements" class="cc-active">Requirements</a></li>
+      <li><a href="#configuration" class="cc-active">Android Configuration</a></li>
+      <li><a href="#build" class="cc-active">Build & Run</a></li>
+      <li><a href="#support" class="cc-active">Support</a></li>
+    </ul>
+    <div class="docs-content">
+      <h2 id="welcome"> Woof-Meow - Pet Sitting Service Platform Flutter App</h2>
+      <p style="margin-bottom: 0px;"><b>Last Updated</b> : 30-03-2023</p>
+      <p style="margin-top: 0px;"><b>By</b> : <a style="text-decoration: underline;" href="https://github.com/Bojan1V/Mobilni-informaciski-sistemi"><i>193192</i> & <i>193101</i></a></p>
+      <p>
+        Woof-Meow is a full application template of Pet Sitting Service Platform Flutter App. Online community for pet sitters. The online platform enables pet owners to find a housesitter to care for their property and pets while they are away from home. Sitters will take care of home and pets free of charge in exchange for a place to stay. If you are interested to develop your own Pet Sitting Service Platform Android and iOS app. So Woof-Meow is perfect for yours. It is full application UI KIT developed by Flutter. It contains 35+ awesome screens with various kind of UI. It's made a lot easier for all developers. Anyone can run apps by following the project instructions.
+      </p>
+        <h3 id="requirements"> Requirements</h3>
+        <p>To customised this project you should have Flutter and Dart installed and configured effectively on your gadget <a href="https://flutter.dev/docs/get-started/install" style="color: red; text-decoration: underline;">Install Flutter</a> Set up your editor Install the <a href="https://flutter.dev/docs/get-started/editor?tab=androidstudio" style="color: red; text-decoration: underline;">Flutter and Dart Plugins.</a></p>
+        <ul>
+          <!-- <li>Onepage HTML Template</li> -->
+          <li>Unzip the flies folder and open it. There have source code name as Woof-Meow-source-code, then use your preferred IDE <span style="color: red;">(Android Studio / Visual Code / IntelliJ)</span> to open the project.</li>
+        </ul>
+        <h3 id="configuration">For Android Configuration</h3>
+        <p><strong>Get Dependencies:</strong></p>
+        <ol>
+          <li>Run the command:</li>
+          <pre class="prettyprint" style="white-space: normal;">
+            flutter pub get
+          </pre>
+        </ol>
+        <p><strong>Change Package Name:</strong></p>
+        <ol>
+          <li>If you want to change the package name following the next steps</li>
+          <li>Open <strong>/android/app/build.gradle</strong> and change the package name</li>
+          <pre class="prettyprint" style="white-space: normal;">
+            <ul style="list-style-type: none; padding: 0;">
+              <li>defaultConfig {</li>
+              <li><span>applicationId "<REPLACE WITH YOUR PACKAGE NAME>" // this is the package name</span></li>
+              <li><span>minSdkVersion 25</span></li>
+              <li><span>targetSdkVersion 33</span></li>
+              <li><span>versionCode flutterVersionCode.toInteger()</span></li>
+              <li><span>versionName flutterVersionName</span></li>
+              <li><span>testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"</span></li>
+              <li><span>multiDexEnabled true</span></li>
+              <li>}</li>
+            </ul>
+          </pre>
+          <li>Open <strong>/android/app/src/main/AndroidManifest.xml</strong> , <strong>/android/app/src/profil/AndroidManifest.xml</strong>, <strong>/android/app/src/debug/AndroidManifest.xml</strong> and specify your:</li>
+          <li>Open <strong>/android/app/src/main/kotlin/MainActivity.kt</strong> and change the package name</li>
+        </ol>
+        <h3 id="build"> Build & Run:</h3>
+        <p><strong>Run the Application:</strong></p>
+        <ol>
+          <li>Start <b>main.dart</b> without debugging and wait for the application to launch on your configured emulator
+            or click the run icon in the toolbar. <br>
+            For details, visit the link: <a href="https://developer.android.com/studio/run/managing-avds" style="color: red; text-decoration: underline;">Managing AVDs</a></li>
+          <li>If you don't use Android Studio or IntelliJ, you can use the command line to run your application using the following command:</li>
+        </ol>
+        <pre class="prettyprint" style="white-space: normal;">
+          flutter run
+        </pre>
+        <img style="width: 100%;" src="img/run_app.png" alt="run">
+    <h3 id="support">Support</h3>
+    <p>We'd be glad to help you if you have any questions relating to this app. Contact us!</p>
+        <p>Email Us : <b>anton.nedelkoski@students.finki.ukim.mk / bojan.vrskovski@students.finki.ukim.mk</b></p>
+      </div>
+    </div>
+</section>
+
+</div>
+<script src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/prettify/prettify.js"></script> 
+<script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?lang=css&skin=sunburst"></script>
+<script src="js/layout.js"></script>
+</body>
+</html>
